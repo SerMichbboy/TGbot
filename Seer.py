@@ -11,3 +11,5 @@ def read():
             final_phrase = random.choice(list_phrases)
             final_phrase = final_phrase.capitalize()
         return final_phrase
+
+
