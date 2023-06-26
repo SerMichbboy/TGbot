@@ -33,7 +33,7 @@ HELP_COMMAND = """
 
 <b>/help</b> - <em>оказываю помощь, брат</em>
 <b>/start</b> - <em>запускаю бота, брат</em>
-<b>/givemecatbro</b> - <em>отправляю тебе котика, брат</em>
+<b>/givemeacatbro</b> - <em>отправляю тебе котика, брат</em>
 
 """
 
@@ -43,7 +43,7 @@ async def help_c(msg: types.Message):
     await msg.reply(text=HELP_COMMAND, parse_mode="HTML")
 
 
-@dp.message_handler(commands=['givemecatbro'])
+@dp.message_handler(commands=['givemeacatbro'])
 async def give_random_cat(msg: types.Message):
     await msg.answer('<em>ДЕРЖИ!</em>', parse_mode='HTML')
     await bot.send_sticker(msg.from_user.id,
