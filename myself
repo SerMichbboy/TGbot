@@ -31,7 +31,7 @@ logging.basicConfig(level=logging.INFO, handlers=[console, logfile])
 
 def reload_auth():  # Автоматическая реавторизация каждые 10 минут
     threading.Timer(600, reload_auth).start()
-    req = requests.post('http://127.0.0.1/admin', data={"token": 'argon2idv19m65540t3p4iXJdoThAWfLzt'})
+    req = requests.post('', data={"token": ''})
     x = req.headers['set-cookie'].split('=')[1]
     tkn_session = x.split(';')[0]
     return tkn_session
