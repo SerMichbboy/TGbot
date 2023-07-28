@@ -9,9 +9,9 @@ import base64
 import json
 
 url = 'http://127.0.0.1'
-e_mail = 'sp@calculate.ru'
-password = 'qweqweqweqwe'
-IP = '10.2.2.147:41324'
+e_mail = ''
+password = ''
+IP = ''
 
 # -------------------------------logging----------------------------------
 
